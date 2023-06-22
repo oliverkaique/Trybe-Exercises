@@ -1,4 +1,5 @@
-Bootcamp Trybe - Exercises
+# Bootcamp Trybe
+
 ![Trybe Banner](https://user-images.githubusercontent.com/108018406/212561861-2601bbb7-c04c-4471-9419-02a3ae55b82c.png)
 :computer: [Full-stack Programming] Repositório contendo diversas atividades de aprendizagem desenvolvidas por [Kaique Oliveira](https://www.linkedin.com/in/kaique-oliveira-b176a8261/) durante o período de 1 ano de estudos no Bootcamp [Trybe](https://app.betrybe.com)
 
