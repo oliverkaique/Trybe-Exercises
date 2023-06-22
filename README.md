@@ -1,4 +1,4 @@
-# Bootcamp Trybe <img src="https://user-images.githubusercontent.com/108018406/212557691-c2f6249a-0db6-4e65-b44f-612336f9cdea.jpg" alt="Logo" width="100" height="75">
+# Bootcamp Trybe <img src="https://user-images.githubusercontent.com/108018406/212557691-c2f6249a-0db6-4e65-b44f-612336f9cdea.jpg" alt="Logo" width="100" height="80">
 
 
 ![Trybe Banner](https://user-images.githubusercontent.com/108018406/212561861-2601bbb7-c04c-4471-9419-02a3ae55b82c.png)
