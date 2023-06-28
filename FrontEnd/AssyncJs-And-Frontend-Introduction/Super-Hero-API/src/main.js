@@ -1,14 +1,38 @@
-//Cathing the DOM
+// importing the sweetalert
+import Swal from 'sweetalert2';
 
-const searcBtn = document.getElementById('button')
+import './style.css';
 
-//logic of the button
-const getSuperHero = () => {
-  const radomNumber =Math.floor(Math.random() * 50) + 1;
-  console.log(radomNumber);
-}
+// Cathing the DOM
+const searcBtn = document.getElementById('button');
+const img = document.getElementById('shimage');
+const nome = document.getElementById('shname');
 
-//addEventListener
-searcBtn.addEventListener('click', getSuperHero)
+// BASEURL
+const BASE_URL = 'https://akabab.github.io/superhero-api/api';
 
+// simple random number func
 
+const MAX_HEROES = 1000;
+
+const radomId = () => Math.floor(Math.random() * MAX_HEROES);
+
+// addEventListener
+searcBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+
+  const id = radomId();
+
+  fetch(`${BASE_URL}/id/${id}.json`)
+    .then(((response) => response.json()))
+    .then(((data) => {
+      img.src = data.images.md;
+      nome.innerHTML = data.name;
+    }))
+    .catch((error) => Swal.fire({
+      title: 'Hero not found',
+      text: error.message,
+      icon: 'error',
+      confirmButtonText: 'Cool',
+    }));
+});
